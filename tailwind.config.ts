@@ -1,20 +1,52 @@
-import type { Config } from "tailwindcss";
+import defaultTheme from "tailwindcss/defaultTheme"
+import plugin from "tailwindcss/plugin"
+
+import type { Config } from "tailwindcss"
 
 const config: Config = {
-  content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
-  ],
+  content: ["./src/**/*.{js,ts,jsx,tsx,mdx}"],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      fontFamily: {
+        sans: ["Radio Canada Variable", ...defaultTheme.fontFamily.sans],
+        // sans: ["Lexend", ...defaultTheme.fontFamily.sans],
+        // sans: ["Inter", ...defaultTheme.fontFamily.sans],
+        fish: ["LostFish", ...defaultTheme.fontFamily.sans],
       },
     },
   },
-  plugins: [],
-};
-export default config;
+  plugins: [
+    plugin(({ matchUtilities, theme }) => {
+      matchUtilities(
+        {
+          "animation-delay": (value) => {
+            return {
+              // override 'animation' property using !important
+              "animation-delay": `${value} !important`,
+            }
+          },
+        },
+        {
+          // use transitionDelay values as default values
+          values: theme("transitionDelay"),
+        }
+      )
+      matchUtilities(
+        {
+          "animation-duration": (value) => {
+            return {
+              // override 'animation' property using !important
+              "animation-duration": `${value} !important`,
+            }
+          },
+        },
+        {
+          // use transitionDelay values as default values
+          values: theme("transitionDelay"),
+        }
+      )
+    }),
+  ],
+}
+
+export default config

@@ -1,6 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
-};
+  // NOTE to disable double rerendering/console logs
+  reactStrictMode: false,
+  // reactStrictMode: true,
+}
 
-export default nextConfig;
+export default nextConfig

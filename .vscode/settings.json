@@ -16,5 +16,10 @@
   // override user's indentation settings (helps when creating new files/auto commenting)
   "editor.indentSize": 2,
   "editor.tabSize": 2,
-  "editor.detectIndentation": false
+  "editor.detectIndentation": false,
+
+  "files.associations": {
+    "*.css": "tailwindcss",
+    "*.svg": "html"
+  }
 }

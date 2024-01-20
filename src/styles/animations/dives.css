@@ -1,0 +1,105 @@
+@keyframes dive-in {
+  0% {
+    transform: translate3d(0, -300%, 0) rotate3d(0, 0, 1, 0deg);
+  }
+
+  100% {
+    transform: translate3d(0, 40%, 0) rotate3d(0, 0, 1, -20deg);
+  }
+}
+
+@keyframes dive-in2 {
+  0% {
+    transform: translate3d(0, 40%, 0) rotate3d(0, 0, 1, -20deg);
+  }
+
+  100% {
+    transform: translate3d(0%, -12%, 0) rotate3d(0, 0, 1, 0deg);
+  }
+}
+
+@keyframes dive-in3 {
+  0% {
+    transform: translate3d(0%, -12%, 0) rotate3d(0, 0, 1, 0deg);
+  }
+
+  25% {
+    transform: translate3d(0%, 12%, 0) rotate3d(0, 0, 1, 0deg);
+  }
+
+  50% {
+    transform: translate3d(0%, -12%, 0) rotate3d(0, 0, 1, 0deg);
+  }
+
+  75% {
+    transform: translate3d(0%, 12%, 0) rotate3d(0, 0, 1, 0deg);
+  }
+
+  100% {
+    transform: translate3d(0%, -12%, 0) rotate3d(0, 0, 1, 0deg);
+  }
+}
+
+.animate-dive-in {
+  transform: translate3d(0, -300%, 0);
+  animation:
+    dive-in,
+    dive-in2 ease-in-out,
+    dive-in3 ease-in-out;
+  animation-duration: 1s, 3s, 7s;
+  animation-delay: 0s, 1s, 4s;
+  animation-iteration-count: 1, 1, infinite;
+}
+
+@keyframes dive-in-alt {
+  0% {
+    transform: translate3d(0, -300%, 0) rotate3d(0, 0, 1, 0deg);
+  }
+
+  100% {
+    transform: translate3d(0, 20%, 0) rotate3d(0, 0, 1, 10deg);
+  }
+}
+
+@keyframes dive-in-alt2 {
+  0% {
+    transform: translate3d(0, 20%, 0) rotate3d(0, 0, 1, 10deg);
+  }
+
+  100% {
+    transform: translate3d(0%, -10%, 0) rotate3d(0, 0, 1, 0deg);
+  }
+}
+
+@keyframes dive-in-alt3 {
+  0% {
+    transform: translate3d(0%, -10%, 0) rotate3d(0, 0, 1, 0deg);
+  }
+
+  25% {
+    transform: translate3d(0%, 10%, 0) rotate3d(0, 0, 1, 0deg);
+  }
+
+  50% {
+    transform: translate3d(0%, -10%, 0) rotate3d(0, 0, 1, 0deg);
+  }
+
+  75% {
+    transform: translate3d(0%, 10%, 0) rotate3d(0, 0, 1, 0deg);
+  }
+
+  100% {
+    transform: translate3d(0%, -10%, 0) rotate3d(0, 0, 1, 0deg);
+  }
+}
+
+.animate-dive-in-alt {
+  transform: translate3d(0, -300%, 0);
+  animation:
+    dive-in-alt,
+    dive-in-alt2 ease-in-out,
+    dive-in-alt3 ease-in-out;
+  animation-duration: 1s, 3s, 7s;
+  animation-delay: 0.3s, 1.3s, 4.3s;
+  animation-iteration-count: 1, 1, infinite;
+}

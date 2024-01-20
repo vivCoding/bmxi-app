@@ -8,10 +8,14 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Radio Canada Variable", ...defaultTheme.fontFamily.sans],
-        // sans: ["Lexend", ...defaultTheme.fontFamily.sans],
+        // sans: ["Sniglet", ...defaultTheme.fontFamily.sans],
+        // sans: ["Radio Canada Variable", ...defaultTheme.fontFamily.sans],
+        sans: ["Lexend", ...defaultTheme.fontFamily.sans],
         // sans: ["Inter", ...defaultTheme.fontFamily.sans],
         fish: ["LostFish", ...defaultTheme.fontFamily.sans],
+      },
+      animation: {
+        // "dive-in": "dive-in forwards",
       },
     },
   },

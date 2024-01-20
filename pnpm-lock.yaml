@@ -14,6 +14,9 @@ dependencies:
   '@fontsource-variable/radio-canada':
     specifier: ^5.0.19
     version: 5.0.19
+  '@fontsource/sniglet':
+    specifier: ^5.0.8
+    version: 5.0.8
   '@fortawesome/fontawesome-svg-core':
     specifier: ^6.5.1
     version: 6.5.1
@@ -146,6 +149,10 @@ packages:
 
   /@fontsource-variable/radio-canada@5.0.19:
     resolution: {integrity: sha512-AIJM0rznaQaWg/N0hbkxIHxklDq9NFsTJ0TGLMOksOiQ2THM/xXw+xBO0SPjzwzsMNbS9W92Kfv+KMoUIccx6w==}
+    dev: false
+
+  /@fontsource/sniglet@5.0.8:
+    resolution: {integrity: sha512-10V0tUWDHmXfX/c1pFiXetaCXxKXVyuthE2/onIY9tHjDPGm2ah1TZyDUpgUw1Yp0T3Hj8BInVIdGAEjvxnjbg==}
     dev: false
 
   /@fortawesome/fontawesome-common-types@6.5.1:

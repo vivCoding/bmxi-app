@@ -12,8 +12,6 @@ import { guidGenerator } from "@/utils/misc"
 
 import type { IconDefinition } from "@fortawesome/free-solid-svg-icons"
 
-const NUM_FISH = 200
-
 const FISH_COLORS = [
   "rgb(96 165 250)",
   // "rgb(59 130 246)",
@@ -44,6 +42,8 @@ export default function FishTransition() {
   const [fishData, setFishData] = useState<FishDataType[]>([])
 
   useEffect(() => {
+    const NUM_FISH = window.innerWidth < 768 ? 100 : 200
+
     for (let i = 0; i < NUM_FISH; i++) {
       setFishData((prev) => [
         ...prev,

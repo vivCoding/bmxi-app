@@ -21,13 +21,20 @@ export default function Intro() {
             opacity: `${percentage > 0.4 ? 1 - (percentage - 0.4) / 0.2 : 1}`,
           }}
         >
-          <div className="flex flex-col justify-center px-20">
-            <div className="mt-14">
-              <h1 className="text-[12rem] font-bold text-blue-700">
+          <div className="flex flex-col justify-center px-10 sm:px-20">
+            <div className="mt-14 sm:mt-20">
+              <h1 className="text-7xl font-bold text-blue-700 sm:text-9xl xl:text-[12rem]">
                 <span className="text-animate animate-dive-in">Dive</span>{" "}
-                <span className="text-animate animate-dive-in-alt">into</span>
+                <span
+                  className="text-animate animate-dive-in-alt"
+                  style={{
+                    animationDelay: "0.3s, 1.3s, 4.3s",
+                  }}
+                >
+                  into
+                </span>
               </h1>
-              <h1 className="mt-10 text-8xl text-blue-400">
+              <h1 className="mt-10 text-4xl text-blue-400 sm:text-7xl xl:text-8xl">
                 <span
                   className="animate-fade-in-up text-animate"
                   style={{ animationDelay: "1.5s, 2s" }}
@@ -53,12 +60,12 @@ export default function Intro() {
                   ever
                 </span>
                 <span
-                  className="animate-arrow text-animate ml-8"
+                  className="animate-arrow text-animate ml-8 mt-2 xl:inline-block"
                   style={{ animationDelay: "3.15s, 3.55s" }}
                 >
                   <FontAwesomeIcon
                     icon={faArrowDown}
-                    className="h-20 align-middle"
+                    className="h-10 align-middle sm:h-16 xl:h-20"
                   />
                 </span>
               </h1>

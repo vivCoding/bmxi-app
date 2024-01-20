@@ -138,7 +138,7 @@ export default function Welcome() {
                     ref={links}
                     className="transition delay-1000 duration-500"
                   >
-                    <div className="mb-10 mt-5 flex-row items-center justify-center space-x-4 text-base text-blue-300 sm:text-xl">
+                    <div className="mb-10 mt-5 flex-row items-center justify-center space-x-8 text-base text-blue-300 sm:text-xl">
                       <a
                         href="https://discord.com/invite/MsxN7nVPQh"
                         className="animate-border-bottom font-fish transition duration-500 after:bg-blue-300 hover:opacity-40"

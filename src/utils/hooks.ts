@@ -44,6 +44,7 @@ export function usePercentageSeen(elemId: string) {
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll)
+    handleScroll()
     return () => window.removeEventListener("scroll", handleScroll)
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [elemId])
@@ -85,6 +86,7 @@ export function useYPercentageOnScreen(elemId: string, useTopEdge = false) {
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll)
+    handleScroll()
     return () => window.removeEventListener("scroll", handleScroll)
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [elemId])
@@ -111,6 +113,7 @@ export function useScrollPosition() {
   useEffect(() => {
     setYPos(window.scrollY)
     window.addEventListener("scroll", handleScroll)
+    handleScroll()
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
 
@@ -148,9 +151,10 @@ export function usePercentageSeen2(elemId: string) {
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll)
+    handleScroll()
     return () => window.removeEventListener("scroll", handleScroll)
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [elemId])
 
-  return { percentageSeen }
+  return { percentage: percentageSeen }
 }

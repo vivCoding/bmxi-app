@@ -140,17 +140,17 @@ export default function Welcome() {
                   >
                     <div className="mb-10 mt-5 flex-row items-center justify-center space-x-8 text-base text-blue-300 sm:text-xl">
                       <a
-                        href="https://discord.com/invite/MsxN7nVPQh"
+                        href=""
                         className="animate-border-bottom font-fish transition duration-500 after:bg-blue-300 hover:opacity-40"
                       >
                         Discord
                         <FontAwesomeIcon className="ml-1" icon={faDiscord} />
                       </a>
                       <a
-                        href="https://boilermake-xi.devpost.com/"
+                        href="https://github.com/vivCoding/bmxi-app"
                         className="animate-border-bottom font-fish transition duration-500 after:bg-blue-300 hover:opacity-40"
                       >
-                        Devpost
+                        GitHub
                         <FontAwesomeIcon className="ml-1" icon={faArrowRight} />
                       </a>
                     </div>
